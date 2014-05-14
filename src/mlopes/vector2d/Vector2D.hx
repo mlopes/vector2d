@@ -35,6 +35,11 @@ class Vector2D
 		y = y / divisor;
 	}
 
+	public function dot_product(vector:Vector2D):Float
+	{
+		 return (x * vector.x) + (y * vector.y);
+	}
+
 	public function magnitude():Float
 	{
 		return Math.sqrt(((x * x) + (y * y)));
