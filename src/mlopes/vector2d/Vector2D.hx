@@ -40,6 +40,11 @@ class Vector2D
 		 return (x * vector.x) + (y * vector.y);
 	}
 
+	public function angle_between(vector:Vector2D):Float
+	{
+		return Math.acos(dot_product(vector) / (magnitude() * vector.magnitude()));
+	}
+
 	public function magnitude():Float
 	{
 		return Math.sqrt(((x * x) + (y * y)));
