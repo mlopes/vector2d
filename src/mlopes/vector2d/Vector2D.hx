@@ -3,8 +3,8 @@ package mlopes.vector2d;
 
 class Vector2D
 {
-	public x(get,set) : Int;
-	public y(get,set) : Int;
+	public var x(get,set) : Int;
+	public var y(get,set) : Int;
 
 	public function new(initialX:Int, initialY){
 		x = initialX;
