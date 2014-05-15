@@ -3,8 +3,8 @@ package mlopes.vector2d;
 
 class Vector2D
 {
-	public var x(get,set) : Float;
-	public var y(get,set) : Float;
+	public var x:Float;
+	public var y:Float;
 
 	public function new(initialX:Float, initialY:Float){
 		x = initialX;
@@ -61,25 +61,5 @@ class Vector2D
 	public function normalize(arguments):Void
 	{
 		normalise();
-	}
-
-	public function get_x():Float
-	{
-		return x;
-	}
-
-	public function set_x(value):Void
-	{
-		x = value;
-	}
-
-	public function get_y():Float
-	{
-		return y;
-	}
-
-	public function set_y(value):Void
-	{
-		y = value;
 	}
 }
