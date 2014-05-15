@@ -6,7 +6,7 @@ class Vector2D
 	public var x(get,set) : Float;
 	public var y(get,set) : Float;
 
-	public function new(initialX:Int, initialY){
+	public function new(initialX:Float, initialY:Float){
 		x = initialX;
 		y = initialY;
 	}
@@ -23,13 +23,13 @@ class Vector2D
 		y = y - vector.y;
 	}
 
-	public function multiply(multiplier:Int):Void
+	public function multiply(multiplier:Float):Void
 	{
 		x = x * multiplier;
 		y = y * multiplier;
 	}
 
-	public function divide(divisor:Int):Void
+	public function divide(divisor:Float):Void
 	{
 		x = x / divisor;
 		y = y / divisor;
