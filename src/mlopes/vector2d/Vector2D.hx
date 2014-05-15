@@ -52,7 +52,7 @@ class Vector2D
 
 	public function normalise():Void
 	{
-		var vectorMagnitude:Float = mag;
+		var vectorMagnitude:Float = magnitude();
 		if(vectorMagnitude != 0) {
 			divide(vectorMagnitude);
 		}
